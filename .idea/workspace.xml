@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b214a0d-393b-4f16-b2f1-f2327df334d6" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/pages/shopping_cart_page.rb" afterPath="$PROJECT_DIR$/lib/pages/order_page.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/first_one.feature" afterPath="$PROJECT_DIR$/features/first_one.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/pages/home_page.rb" afterPath="$PROJECT_DIR$/lib/pages/home_page.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/features/first_one.feature" afterPath="$PROJECT_DIR$/features/order_validation.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/my_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/my_steps.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -20,7 +18,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/test_puppies@Cukes.coverage" NAME="Cukes Coverage Results" MODIFIED="1418927074121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="test_puppies" />
+    <SUITE FILE_PATH="coverage/test_puppies@Cukes.coverage" NAME="Cukes Coverage Results" MODIFIED="1418927667178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="test_puppies" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -44,21 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="first_one.feature" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/features/first_one.feature">
+      <file leaf-file-name="order_validation.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/order_validation.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65502185" vertical-offset="0" max-vertical-offset="540">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="630">
+              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_steps.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="my_steps.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/step_definitions/my_steps.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="780">
-              <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.5414847" vertical-offset="322" max-vertical-offset="780">
+              <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -104,9 +102,10 @@
       <list>
         <option value="$PROJECT_DIR$/lib/pages/details_page.rb" />
         <option value="$PROJECT_DIR$/lib/pages/shopping_cart_page.rb" />
-        <option value="$PROJECT_DIR$/features/step_definitions/my_steps.rb" />
         <option value="$PROJECT_DIR$/lib/pages/home_page.rb" />
         <option value="$PROJECT_DIR$/features/first_one.feature" />
+        <option value="$PROJECT_DIR$/features/order_validation.feature" />
+        <option value="$PROJECT_DIR$/features/step_definitions/my_steps.rb" />
       </list>
     </option>
   </component>
@@ -391,7 +390,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418926309485</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactored step to find puppy by name instead of using index of row.">
+      <created>1418927154114</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1418927154114</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -431,7 +436,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Added second scenario for validating address.&#10;Refactored." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added second scenario for validating address.&#10;Refactored." />
+    <MESSAGE value="Refactored step to find puppy by name instead of using index of row." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored step to find puppy by name instead of using index of row." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -462,14 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/my_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="780">
-          <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/pages/home_page.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
@@ -478,10 +476,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/first_one.feature">
+    <entry file="file://$PROJECT_DIR$/features/order_validation.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65502185" vertical-offset="0" max-vertical-offset="540">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="630">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/my_steps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5414847" vertical-offset="322" max-vertical-offset="780">
+          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
           <folding />
         </state>
       </provider>

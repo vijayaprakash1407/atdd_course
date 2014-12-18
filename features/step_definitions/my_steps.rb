@@ -35,7 +35,7 @@ And(/^I click the place order button$/) do
 end
 
 Then(/^I should see "([^"]*)"$/) do |expected_message|
-  expect(on(OrderPage).text).to include expected_message
+  expect(@current_page.text).to include expected_message
 end
 
 And(/^I enter "([^"]*)" in the name field$/) do |name|
