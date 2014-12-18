@@ -11,33 +11,37 @@ And(/^I click the adopt me button$/) do
 end
 
 And(/^I click the complete adoption button$/) do
-  on(ShoppingCartPage).complete_adoption
+  on(OrderPage).complete_adoption
 end
 
 And(/^I leave the (.+) field blank$/) do |field|
-  on(ShoppingCartPage).send "#{field}=", ''
+  on(OrderPage).send "#{field}=", ''
 end
 
 And(/^I enter "([^"]*)" in the address field$/) do |address|
-  on(ShoppingCartPage).address = address
+  on(OrderPage).address = address
 end
 
 And(/^I enter "([^"]*)" in the email field$/) do |email|
-  on(ShoppingCartPage).email = email
+  on(OrderPage).email = email
 end
 
 And(/^I select "([^"]*)" in the pay type field$/) do |pay_type|
-  on(ShoppingCartPage).pay_type = pay_type
+  on(OrderPage).pay_type = pay_type
 end
 
 And(/^I click the place order button$/) do
-  on(ShoppingCartPage).place_order
+  on(OrderPage).place_order
 end
 
 Then(/^I should see "([^"]*)"$/) do |expected_message|
-  expect(on(ShoppingCartPage).text).to include expected_message
+  expect(on(OrderPage).text).to include expected_message
 end
 
 And(/^I enter "([^"]*)" in the name field$/) do |name|
-  on(ShoppingCartPage).name = name
+  on(OrderPage).name = name
+end
+
+When(/^I view the puppy "([^"]*)"$/) do |puppy_name|
+  on(HomePage).select_puppy puppy_name
 end

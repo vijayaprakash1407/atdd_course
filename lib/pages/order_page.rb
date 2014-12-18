@@ -1,4 +1,4 @@
-class ShoppingCartPage
+class OrderPage
   include PageObject
 
   button(:complete_adoption, :value => 'Complete the Adoption')

@@ -7,7 +7,7 @@ Feature:
     Given I am shopping for puppies
 
   Scenario: Name is required
-    When I click the first view details button
+    When I view the puppy "Brook"
     And I click the adopt me button
     And I click the complete adoption button
     And I leave the name field blank
@@ -18,7 +18,7 @@ Feature:
     Then I should see "Name can't be blank"
 
   Scenario: Address is required
-    When I click the first view details button
+    When I view the puppy "Brook"
     And I click the adopt me button
     And I click the complete adoption button
     And I enter "Randy" in the name field
@@ -27,6 +27,4 @@ Feature:
     And I select "Credit card" in the pay type field
     And I click the place order button
     Then I should see "Address can't be blank"
-
-
 
