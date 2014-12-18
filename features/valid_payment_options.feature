@@ -11,3 +11,7 @@ Feature: Valid Payment options
       | Check          |
       | Credit card    |
       | Purchase order |
+
+  Scenario: Name is required
+    When I try to checkout without a name
+    Then I should see the error message "Name can't be blank"

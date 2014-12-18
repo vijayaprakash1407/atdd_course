@@ -86,3 +86,7 @@ Then(/^I see the following payment options:$/) do |expected_options|
     expect(on(OrderPage).pay_type_options).to include payment_option['pay_type']
   end
 end
+
+Then(/^I should see the error message "([^"]*)"$/) do |error_message|
+  expect(@current_page.errors).to include error_message
+end
