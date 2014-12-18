@@ -45,3 +45,17 @@ end
 When(/^I view the puppy "([^"]*)"$/) do |puppy_name|
   on(HomePage).select_puppy puppy_name
 end
+
+When(/^I checkout with:$/) do |order_info|
+  order_info.hashes.each do | order |
+    on(OrderPage).checkout order
+  end
+end
+
+When(/^I checkout$/) do
+  on(OrderPage).checkout
+end
+
+When(/^I checkout using a purchase order$/) do
+  on(OrderPage).checkout({'pay_type' => 'Purchase order'})
+end
