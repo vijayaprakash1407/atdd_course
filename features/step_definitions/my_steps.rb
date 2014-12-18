@@ -73,3 +73,16 @@ When(/^I try to checkout without an? (\w+)$/) do |field|
   on(OrderPage).complete_adoption
   on(OrderPage).checkout({field => ''})
 end
+
+When(/^I am checking out$/) do
+  visit(HomePage).select_puppy
+  on(DetailsPage).adopt_me
+  on(OrderPage).complete_adoption
+end
+
+Then(/^I see the following payment options:$/) do |expected_options|
+  # table is a table.hashes.keys # => [:pay_type]
+  expected_options.hashes.each do |payment_option|
+    expect(on(OrderPage).pay_type_options).to include payment_option['pay_type']
+  end
+end
