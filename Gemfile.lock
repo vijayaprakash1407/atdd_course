@@ -58,6 +58,7 @@ PLATFORMS
 
 DEPENDENCIES
   cucumber
+  data_magic
   page-object
   rake
   require_all

@@ -1,5 +1,6 @@
 class OrderPage
   include PageObject
+  include DataMagic
 
   DEFAULT_DATA = {
       'name' => "Randy Default",
@@ -17,7 +18,7 @@ class OrderPage
   button(:place_order, :value => 'Place Order')
 
   def checkout(order = {})
-    populate_page_with DEFAULT_DATA.merge(order)
+    populate_page_with data_for(:checkout_page, order)
     place_order
   end
 
