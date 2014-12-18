@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b214a0d-393b-4f16-b2f1-f2327df334d6" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/features/first_one.feature" afterPath="$PROJECT_DIR$/features/order_validation.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/my_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/my_steps.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test_puppies.iws" />
@@ -396,7 +394,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418927154114</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added scenario for thank you message.">
+      <created>1418927759643</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1418927759643</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -437,7 +441,8 @@
     </option>
     <MESSAGE value="Added second scenario for validating address.&#10;Refactored." />
     <MESSAGE value="Refactored step to find puppy by name instead of using index of row." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored step to find puppy by name instead of using index of row." />
+    <MESSAGE value="Added scenario for thank you message." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added scenario for thank you message." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
