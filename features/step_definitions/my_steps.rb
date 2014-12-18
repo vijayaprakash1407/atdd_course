@@ -59,3 +59,13 @@ end
 When(/^I checkout using a purchase order$/) do
   on(OrderPage).checkout({'pay_type' => 'Purchase order'})
 end
+
+Given(/^I am adopting the puppy "([^"]*)"$/) do |puppy_name|
+end
+
+When(/^I complete the adoption$/) do
+  visit(HomePage).select_puppy
+  on(DetailsPage).adopt_me
+  on(OrderPage).complete_adoption
+  on(OrderPage).checkout
+end
