@@ -14,8 +14,8 @@ And(/^I click the complete adoption button$/) do
   on(ShoppingCartPage).complete_adoption
 end
 
-And(/^I leave the name field blank$/) do
-  
+And(/^I leave the (.+) field blank$/) do |field|
+  on(ShoppingCartPage).send "#{field}=", ''
 end
 
 And(/^I enter "([^"]*)" in the address field$/) do |address|
@@ -35,7 +35,9 @@ And(/^I click the place order button$/) do
 end
 
 Then(/^I should see "([^"]*)"$/) do |expected_message|
-  on(ShoppingCartPage) do |page|
-    expect(page.text).to include expected_message
-  end
+  expect(on(ShoppingCartPage).text).to include expected_message
+end
+
+And(/^I enter "([^"]*)" in the name field$/) do |name|
+  on(ShoppingCartPage).name = name
 end
