@@ -61,17 +61,17 @@ When(/^I checkout using a purchase order$/) do
 end
 
 When(/^I complete the adoption$/) do
-  visit(HomePage).select_puppy
-  navigate_to(OrderPage).checkout
+  visit(HomePage)
+  navigate_all
 end
 
 When(/^I try to checkout without an? (\w+)$/) do |field|
-  visit(HomePage).select_puppy
+  visit(HomePage)
   navigate_to(OrderPage).checkout({field => ''})
 end
 
 When(/^I am checking out$/) do
-  visit(HomePage).select_puppy
+  visit(HomePage)
   navigate_to(OrderPage)
 end
 

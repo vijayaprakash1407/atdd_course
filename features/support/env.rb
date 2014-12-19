@@ -11,10 +11,10 @@ World(PageObject::PageFactory)
 
 PageObject::PageFactory.routes = {
     default: [
-        # [HomePage, :select_puppy],
+        [HomePage, :select_puppy],
         [DetailsPage, :adopt_me],
         [CartPage, :complete_adoption],
-        [OrderPage]
+        [OrderPage, :checkout]
     ]
 }
 
