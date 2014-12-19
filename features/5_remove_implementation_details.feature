@@ -3,6 +3,9 @@ Feature: Remove implementation details
   As a student
   I want to express behavior in terms of the business and more concisely
 
+  Background:
+    Given I am shopping for puppies
+
   Scenario: Simple adoption
     When I complete the adoption
     Then I should see "Thank you for adopting a puppy"

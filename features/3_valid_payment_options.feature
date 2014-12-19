@@ -4,7 +4,7 @@ Feature: Valid Payment options
   I want
 
   Scenario: list of payment options is correct
-    Given
+    Given I am shopping for puppies
     When I am checking out
     Then I see the following payment options:
       | pay_type       |
