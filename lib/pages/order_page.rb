@@ -9,8 +9,6 @@ class OrderPage
       'pay_type' => 'Credit card'
   }
 
-
-  button(:complete_adoption, :value => 'Complete the Adoption')
   text_field(:address, :id => 'order_address')
   text_field(:email, :id => 'order_email')
   text_field(:name, :id => 'order_name')

@@ -11,7 +11,7 @@ And(/^I click the adopt me button$/) do
 end
 
 And(/^I click the complete adoption button$/) do
-  on(OrderPage).complete_adoption
+  on(CartPage).complete_adoption
 end
 
 And(/^I leave the (.+) field blank$/) do |field|
@@ -63,21 +63,21 @@ end
 When(/^I complete the adoption$/) do
   visit(HomePage).select_puppy
   on(DetailsPage).adopt_me
-  on(OrderPage).complete_adoption
+  on(CartPage).complete_adoption
   on(OrderPage).checkout
 end
 
 When(/^I try to checkout without an? (\w+)$/) do |field|
   visit(HomePage).select_puppy
   on(DetailsPage).adopt_me
-  on(OrderPage).complete_adoption
+  on(CartPage).complete_adoption
   on(OrderPage).checkout({field => ''})
 end
 
 When(/^I am checking out$/) do
   visit(HomePage).select_puppy
   on(DetailsPage).adopt_me
-  on(OrderPage).complete_adoption
+  on(CartPage).complete_adoption
 end
 
 Then(/^I see the following payment options:$/) do |expected_options|
@@ -87,6 +87,6 @@ Then(/^I see the following payment options:$/) do |expected_options|
   end
 end
 
-Then(/^I should see the error message "([^"]*)"$/) do |error_message|
-  expect(@current_page.errors).to include error_message
+Then(/^I should see the error message "([^"]*)"$/) do |message|
+  expect(@current_page).to have_error_message message
 end
