@@ -1,4 +1,4 @@
-Feature: Passing data
+Feature: Supplying data
   In order to have enough information to complete a puppy adoption
   As a adoption agency fulfillment agent
   I want to ensure the adopter provides all necessary information

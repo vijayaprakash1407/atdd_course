@@ -3,6 +3,7 @@ Feature: Order validation
   As a adoption agency fulfillment agent
   I want to ensure the adopter provides all necessary information
 
+  #These are a good start, but ugly
   Background:
     Given I am shopping for puppies
     When I view the puppy "Brook"

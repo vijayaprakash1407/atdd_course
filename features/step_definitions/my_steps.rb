@@ -62,26 +62,20 @@ end
 
 When(/^I complete the adoption$/) do
   visit(HomePage).select_puppy
-  on(DetailsPage).adopt_me
-  on(CartPage).complete_adoption
-  on(OrderPage).checkout
+  navigate_to(OrderPage).checkout
 end
 
 When(/^I try to checkout without an? (\w+)$/) do |field|
   visit(HomePage).select_puppy
-  on(DetailsPage).adopt_me
-  on(CartPage).complete_adoption
-  on(OrderPage).checkout({field => ''})
+  navigate_to(OrderPage).checkout({field => ''})
 end
 
 When(/^I am checking out$/) do
   visit(HomePage).select_puppy
-  on(DetailsPage).adopt_me
-  on(CartPage).complete_adoption
+  navigate_to(OrderPage)
 end
 
 Then(/^I see the following payment options:$/) do |expected_options|
-  # table is a table.hashes.keys # => [:pay_type]
   expected_options.hashes.each do |payment_option|
     expect(on(OrderPage).pay_type_options).to include payment_option['pay_type']
   end

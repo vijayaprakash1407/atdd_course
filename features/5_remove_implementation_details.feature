@@ -1,7 +1,7 @@
-Feature: One scenario to rule them all
-  In order to
-  As a
-  I want
+Feature: Remove implementation details
+  In order to remove implementation details from my steps
+  As a student
+  I want to express behavior in terms of the business and more concisely
 
   Scenario: Simple adoption
     When I complete the adoption
